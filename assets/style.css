@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
+
+:root {
+	--background-color: #f2f7f9;
+	--border-color: #023e8a;
+	--textarea: #e2ecef;
+	--text-color: #06062f;
+	--link-color: #0077b6;
+	--button-hover: #0056b3;
+}
+
+h1 {
+	visibility: hidden;
+	font-size: large;
+	font-family: "Montserrat", serif;
+	color: var(--border-color);
+}
+
+.header-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem;
+
+	background-color: var(--background-color);
+}
+
+.logo {
+	width: 8rem;
+	height: auto;
+}
+
+.menu {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+nav ul {
+	padding: 0;
+	list-style: none;
+	margin: 0;
+}
+
+nav ul li {
+	margin-bottom: 0.5rem;
+}
+
+nav a {
+	text-decoration: none;
+	color: var(--link-color);
+	font-weight: bold;
+	font-family: "Montserrat", serif;
+	font-size: large;
+}
+
+nav a:hover {
+	color: var(--border-color);
+}
+
+.container-projets {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 1rem;
+}
+
+.soustitre {
+	text-align: center;
+	font-family: "Montserrat", serif;
+	color: var(--border-color);
+	font-size: large;
+	margin-bottom: 1rem;
+}
+
+.texte {
+	font-family: "Roboto", serif;
+	font-size: smaller;
+	text-align: left;
+	padding: 1rem;
+	line-height: 1.5;
+	color: var(--text-color);
+}
+
+.container-formulaire {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+	padding: 1rem;
+}
+
+form {
+	max-width: 600px;
+	margin-bottom: 1rem;
+	padding: 1rem;
+	background-color: var(--background-color);
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form p {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	margin-bottom: 2rem;
+}
+
+label {
+	display: block;
+	font-weight: bold;
+	margin-bottom: 1rem;
+	font-size: larger;
+	color: var(--text-color);
+	font-family: "Montserrat", serif;
+}
+
+input,
+textarea {
+	width: 100%;
+	padding: 0.75rem 0.5rem;
+	border: 1px solid var(--border-color);
+	border-radius: 5px;
+	color: var(--text-color);
+	background-color: var(--background-color);
+	font-family: "Roboto", serif;
+}
+
+input:focus,
+textarea:focus {
+	border-color: var(--text-color);
+	outline: none;
+	box-shadow: 0 0 5px rgba(94, 122, 152, 0.4);
+}
+
+button {
+	width: 100%;
+	padding: 1rem 2rem;
+	background-color: var(--border-color);
+	color: #fff;
+	border: none;
+	border-radius: 0.5rem;
+	font-size: larger;
+	cursor: pointer;
+	font-family: "Montserrat", serif;
+}
+
+button:hover {
+	background-color: var(--button-hover);
+}
+
+input:invalid,
+textarea:invalid {
+	border-color: var(--link-color);
+	background-color: var(--textarea);
+}
+
+.error-message {
+	color: var(--text-color);
+	font-size: smaller;
+	margin-bottom: 1rem;
+}
+
+.container-activites {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 1rem;
+}
+
+.footer-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 1rem;
+	background-color: var(--background-color);
+	color: var(--text-color);
+	font-family: "Montserrat", serif;
+}
+
+.footer-text {
+	font-family: "Roboto", serif;
+	text-align: center;
+	font-size: medium;
+	color: var(--text-color);
+}
+
+.footer-link {
+	font-family: "Montserrat", serif;
+	text-align: center;
+	font-size: medium;
+	color: var(--link-color);
+}
+
+.footer-link2 {
+	font-family: "Montserrat", serif;
+	text-align: center;
+	font-size: medium;
+	color: var(--link-color);
+}
+
+.footer-link a {
+	color: var(--link-color);
+}
+
+.footer-link a:hover {
+	color: var(--border-color);
+}
+
+@media screen and (min-width: 768px) {
+	h1 {
+		visibility: visible;
+		font-size: x-large;
+	}
+
+	.header-container {
+		justify-content: center;
+		align-items: center;
+	}
+
+	.logo {
+		margin-right: 25rem;
+	}
+
+	.menu {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		margin-left: 20rem;
+	}
+
+	nav ul {
+		display: flex;
+		flex-direction: row;
+		margin: 0;
+	}
+
+	nav ul li {
+		margin: 0 2rem;
+	}
+
+	.soustitre {
+		font-size: x-large;
+	}
+
+	.texte {
+		font-size: large;
+	}
+
+	.container-formulaire {
+		width: 80%;
+		margin: 0 auto;
+		padding: 1.5rem;
+	}
+
+	.footer-container {
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+	}
+}
