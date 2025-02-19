@@ -1,6 +1,10 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
-layout: home
+layout: default
+title: "Bienvenue sur mon site"
+permalink: /accueil/ 
 ---
+
+# Bienvenue sur mon site !
+
+C'est ici que je présente mes projets et mes activités.  
+Vous pouvez explorer mes projets en cliquant sur le lien ci-dessous.
