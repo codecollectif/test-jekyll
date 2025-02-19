@@ -1,10 +1,9 @@
 ---
 layout: default
 title: "Bienvenue sur mon site"
-permalink: /accueil/ 
+permalink: / 
 ---
 
-# Bienvenue sur mon site !
+# Bienvenue sur le site de Code Collectif !
 
-C'est ici que je présente mes projets et mes activités.  
-Vous pouvez explorer mes projets en cliquant sur le lien ci-dessous.
+Ici une présentation de l'association, de ses activités et de ses valeurs.
